@@ -9,3 +9,4 @@ elif platform[0]=='w':
         system('cls')
         
 cls()
+print('hello')
