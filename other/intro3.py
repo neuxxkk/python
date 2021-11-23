@@ -1,3 +1,4 @@
+
 import pygame
 
 BLACK = (0, 0, 0)
@@ -13,15 +14,17 @@ WHITE = (255, 255, 255)
 pygame.init()
 screen = pygame.display.set_mode((640, 240))
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+# running = True
+# while running:
+#     for event in pygame.event.get():
+#         if event.type == pygame.QUIT:
+#             running = False
 
-        print(event)
+#         print(event)
 
-    screen.fill(YELLOW)
-    pygame.display.update()
+screen.fill(YELLOW)
+pygame.display.update()
+
+pygame.time.delay(2000)
 
 pygame.quit()
