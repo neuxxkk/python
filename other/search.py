@@ -1,15 +1,19 @@
 from os import system
+import pygame
 system('cls')
 import requests
 from bs4 import BeautifulSoup
+from pygame import time
 
-url='https://instagram.com'
+ask=input('Name of the site: ')
+url=f'https://{ask}.com'
 req=requests.get(url)
 txt=req.text
 
 soup=BeautifulSoup(txt, 'html.parser')
 soup.prettify()
 print(soup.title)
+time.wait(2000)
 
 # print(txt.title)
 
