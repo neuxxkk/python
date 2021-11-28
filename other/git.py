@@ -1,4 +1,4 @@
-from os import system
+from os import system, times
 from colorama.ansi import Fore
 system('cls')
 import os
@@ -22,3 +22,7 @@ git('status')
 git('add .')
 git('commit -m "a"')
 git('push')
+
+from time import sleep
+
+sleep(5)
