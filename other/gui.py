@@ -7,25 +7,25 @@ from tkinter import *
 import tkinter
 
 win = Tk()
-win.geometry('300x150')
-win.title("Hello")
+# win.geometry('300x150')
+# win.title("Hello")
 
 
-t='Hello, world'
-txt=Label(win,text=t)
-txt.pack()
+# t='Hello, world'
+# txt=Label(win,text=t)
+# txt.pack()
 
-inp=Entry(win)
-inp.pack()
+# inp=Entry(win)
+# inp.pack()
 
-def send():
-    v=inp.get()
-    print(v)
-    color=choice(['red','green','blue'])
-    win.configure(bg=color) 
+# def send():
+#     v=inp.get()
+#     print(v)
+#     color=choice(['red','green','blue'])
+#     win.configure(bg=color) 
 
-btn=Button(win,text='Done',command=send)
-btn.pack()
+# btn=Button(win,text='Done',command=send)
+# btn.pack()
 
 
 

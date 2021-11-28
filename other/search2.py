@@ -1,7 +1,10 @@
 import webbrowser
 import selenium
-import antigravity
 
-webbrowser.open('https://google.com')
+site=input('Site name: ')
+
+webbrowser.open(f'https://{site}.com')
+
+
 
 # selenium.
