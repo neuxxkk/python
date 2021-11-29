@@ -7,6 +7,7 @@ import os
 n=input('Wich past: ')
 
 if n=='' or n[1]=='y':
+    n='python'
     path='C:/Users/32165/Desktop/code/python'
 else:
     print(Fore.RED,'Must be on Desktop!',Fore.WHITE)
