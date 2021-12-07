@@ -1,6 +1,9 @@
 from pre import cls 
 cls()
 import os
+
+os.system('pip install pydirectory')
+
 import pydirectory
 
 
