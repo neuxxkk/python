@@ -1,4 +1,16 @@
 import os
+import platform
+p=platform.platform()
+u=input('pc-user: ')
+os.system('pip install pygame')
+if p[0].lower()=='l':
+    clean='clear'
+    h=f'/home/{u}/Desktop'
+else:
+    clean='cls'
+    h=f'C:/Users/{u}/Desktop'
+    
+
 from pygame import *
 import pygame
 import time
@@ -6,7 +18,8 @@ from os import system
 from pygame.display import update
 
 from pygame.time import wait
-system('cls')
+
+system(clean)
 
 res=(720,720)
 black=(0,0,0)
@@ -42,6 +55,7 @@ while 1:
             alarm_minute=int(input('Alarm minute: '))
             alarm_tempo=(alarm_hour,alarm_minute)
             message=input('Message: ')
+            message=message.title()
 
             def config_pygame():
                 x=time.localtime()
@@ -104,7 +118,7 @@ while 1:
 
 
             while not conf:
-                system('cls')
+                system(clean)
                 x=time.localtime()
                 hour=x.tm_hour
                 minute=x.tm_min

@@ -1,19 +1,28 @@
-from pre import cls 
-cls()
 import os
+import platform
+p=platform.platform()
 
-os.system('pip install pydirectory')
+
+u=input('pc-user: ')
+
+if p[0].lower()=='l':
+    os.system('clear')
+    h=f'/home/{u}/Desktop'
+    d='rm -r'
+else:
+    h=f'C:/Users/{u}/Desktop'
+    d='del'
 
 import pydirectory
 
 
 
 def find(x):
-    n=f'C:/Users/32165/Desktop/code/python/{x}'
+    n=f'{h}/code/python/{x}'
     os.chdir(n)
     e=f'{n}/__pycache__'
     if os.path.exists(e):
-        os.system('del __pycache__') 
+        os.system(f'{d} __pycache__') 
         os.system('rmdir __pycache__')
     os.system('dir')
 
