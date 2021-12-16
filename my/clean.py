@@ -13,12 +13,8 @@ else:
     h=f'C:/Users/{u}/Desktop'
     d='del'
 
-import pydirectory
-
-
-
 def find(x):
-    n=f'{h}/code/python/{x}'
+    n=f'{h}/python/{x}'
     os.chdir(n)
     e=f'{n}/__pycache__'
     if os.path.exists(e):
@@ -30,7 +26,9 @@ find('')
 
 find('exercise/modules')
 find('exercise/statements')
-find('exercise')
+find('exercise/loops-for')
+find('exercise/loops-while')
+find('exercise/')
 
 find('my')
 

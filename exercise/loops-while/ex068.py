@@ -4,11 +4,12 @@ cls()
 
 win=1
 i=0
-while win:
+player=input('Your name: ')
+
+while 1:
     print()
-    player=input('Your name: ')
     player_c=input('even or odd: ')
-    pc_c='odd' if player_c[0].title()=='o' else 'even'
+    pc_c='odd' if player_c[0].title()!='O' else 'even'
 
     print(f'\nPC: {pc_c}\n{player.upper()}: {player_c}\n')
 
@@ -18,4 +19,13 @@ while win:
 
     print(f'\nPC: {pc_n}\n{player.upper()}: {player_n}\n')
 
-    win=1 if r%2==0 and pc_c=='odd' else 0
+                        
+
+
+    if r%2==0 and pc_c=='odd'or r%2!=0 and pc_c=='even':
+        print(f'\nResult: {r} - even') if r%2==0 else     print(f'\nResult: {r} - odd')
+        i+=1
+        print(f'{"-"*5}You win{"-"*5}')
+    else:
+        print(f'{"-"*5}You lose{"-"*5}\n\nPoints: {i}')
+        break

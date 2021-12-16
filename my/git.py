@@ -1,8 +1,11 @@
 from os import system, times
-from colorama.ansi import Fore
+# system('pip install colorama')
+# from colorama.ansi import Fore
 import webbrowser
 import os
 import platform
+
+
 
 p=platform.platform()
 u=input('pc-user: ')
@@ -14,13 +17,13 @@ else:
     system('cls')
     h=f'C:/Users/{u}/Desktop'
 
-print(Fore.RED,'Must be on Desktop!',Fore.WHITE)
+print('Must be on Desktop!')
 
 n=input('Wich past: ')
 
 if n=='' or n[1]=='y':
     n='python'
-    path=f'{h}/code/python'
+    path=f'{h}/python'
 else:
     path=f'{h}/Desktop/{n}'
     
