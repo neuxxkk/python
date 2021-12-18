@@ -8,7 +8,7 @@ import platform
 
 
 p=platform.platform()
-u=input('pc-user: ')
+u=os.getlogin()
 
 if p[0].lower()=='l':
     system('clear')
