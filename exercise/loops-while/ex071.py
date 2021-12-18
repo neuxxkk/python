@@ -1,17 +1,16 @@
-# from pre import cls
-# cls()
+from pre import cls
+cls()
 
-# n=int(input('value: '))
+n=int(input('value: R$'))
 
-# p1=n%50
-# if p1!=0:
-#     p2=p1%20
-#     if p2!=0:
-#         p3=p2
-#     else:t=p1+p2
-# else: t=p1
+def all(i):
+    global n
+    p=n//i
+    n=n%i
+    if p!=0:
+        print(f'Cédulas de {i}: {p}')
 
-
-# elif n%20==0:
-# elif n%10==0:
-# elif n%1==0:
+all(50)
+all(20)
+all(10)
+all(1)
