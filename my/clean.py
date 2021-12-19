@@ -28,6 +28,7 @@ find('exercise/modules')
 find('exercise/statements')
 find('exercise/loops-for')
 find('exercise/loops-while')
+find('exercise/tuples')
 find('exercise/')
 
 find('my')
