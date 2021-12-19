@@ -1,13 +1,12 @@
-from typing import Tuple
 from pre import cls
 cls()
 
-x=('noo','foo','stu')
-y=['a',1,False]
-r={'noo','foo','stu'}
+while 1:
+    n=int(input('number[0 - 10]: '))
 
-# n=x.index()
+    x='um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'
 
-print(x)
-print(y)
-print(r)
+    if 10>= n >=0:
+        print(f'number {x[n-1]}')
+        break
+    
