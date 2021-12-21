@@ -29,6 +29,7 @@ find('exercise/statements')
 find('exercise/loops-for')
 find('exercise/loops-while')
 find('exercise/tuples')
+find('exercise/lists')
 find('exercise/')
 
 find('my')
