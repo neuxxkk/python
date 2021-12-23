@@ -3,6 +3,8 @@ cls()
 
 max=0
 min=0
+px,pn='',''
+fx,fn='foi','foi'
 l=[]
 data=[]
 while 1:
@@ -30,6 +32,14 @@ while 1:
 
 
 print()
+
+if len(maxn)>1:
+    px='s'
+    fx='foram'
+if len(minn)>1:
+    pn='s'
+    fn='foram'
+
 print(f'Foram cadastradas {len(l)} pessoas')
-print(f'A(s) pessoa(s) mais pesada(s) foi(ram) {maxn} com {max}kg')
-print(f'A(s) pessoa(s) mais leve(s) foi(ram) {minn} com {min}kg')
+print(f'A{px} pessoa{px} mais pesada{px} {fx} {maxn} com {max}kg')
+print(f'A{pn} pessoa{pn} mais leve{pn} {fn} {minn} com {min}kg')
