@@ -1,9 +1,8 @@
 from os import system
-import pygame
 system('cls')
 import requests
 from bs4 import BeautifulSoup
-from pygame import time
+from time import sleep as s
 
 ask=input('Name of the site: ')
 url=f'https://{ask}.com'
@@ -13,7 +12,7 @@ txt=req.text
 soup=BeautifulSoup(txt, 'html.parser')
 soup.prettify()
 print(soup.title)
-time.wait(2000)
+s(2)
 
 # print(txt.title)
 
