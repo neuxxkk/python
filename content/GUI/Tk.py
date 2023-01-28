@@ -12,17 +12,17 @@ win.title("Hello")
 
 
 t='Hello, world'
-txt=Label(win,text=t)
+txt=Label(win,text=t) 
 txt.pack()
 
-inp=Entry(win)
+inp=Entry(win)#input text
 inp.pack()
 
 def send():
-    v=inp.get()
+    v=inp.get()#get the input text
     print(v)
     color=choice(['red','green','blue'])
-    win.configure(bg=color) 
+    win.configure(bg=color)#master configs such as color
 
 btn=Button(win,text='Done',command=send)
 btn.pack()
